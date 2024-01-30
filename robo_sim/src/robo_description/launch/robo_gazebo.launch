@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<launch>
+ <env name="GAZEBO_MODEL_PATH" value="${GAZEBO_MODEL_PATH}:$(find warehouse_simulation)/models"/>
+ <env name="GAZEBO_RESOURCE_PATH" value="${GAZEBO_RESOURCE_PATH}:$(find warehouse_simulation)/models"/>
+
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+  <arg name="world_name" value="$(find warehouse_simulation)/worlds/warehouse.world"/>
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="recording" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+
+  <param name="robot_description" command="$(find xacro)/xacro '$(find robo_description)/urdf/robo.xacro'" />
+
+<!-- Spawn a robot into Gazebo -->
+<node name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"  output="screen" args="-param robot_description -urdf -model robo" />
+ <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen" />
+
+  <!-- Starting Joint state publisher node which will publish the joint values   -->
+  <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher" />
+</launch>

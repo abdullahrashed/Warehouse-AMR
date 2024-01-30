@@ -1,0 +1,8 @@
+prefix=/home/abdullah/robo_sim/devel
+
+Name: warehouse_simulation
+Description: Description of warehouse_simulation
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

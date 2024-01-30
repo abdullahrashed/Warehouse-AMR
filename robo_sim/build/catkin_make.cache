@@ -1,0 +1,2 @@
+robo_description:rtab_dumpster:teleop_twist_keyboard:warehouse_simulation_toolkit
+-DCATKIN_DEVEL_PREFIX=/home/abdullah/robo_sim/devel -DCMAKE_INSTALL_PREFIX=/home/abdullah/robo_sim/install -G Unix Makefiles

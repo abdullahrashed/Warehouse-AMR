@@ -1,0 +1,8 @@
+prefix=/home/abdullah/robo_sim/install
+
+Name: robo_description
+Description: Description of robo_description
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

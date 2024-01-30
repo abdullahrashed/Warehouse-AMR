@@ -1,0 +1,8 @@
+prefix=/home/abdullah/robo_sim/devel
+
+Name: rtab_dumpster
+Description: Description of rtab_dumpster
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
