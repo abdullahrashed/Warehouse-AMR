@@ -1,0 +1,15 @@
+<package>
+  <description brief="robo_web_v2">
+
+     robo_web_v2
+
+  </description>
+  <author>ash-sharkawi</author>
+  <license>BSD</license>
+  <review status="unreviewed" notes=""/>
+  <url>http://ros.org/wiki/robo_web_v2</url>
+  <depend package="rospy"/>
+  <depend package="roscpp"/>
+  <depend package="std_msgs"/>
+
+</package>

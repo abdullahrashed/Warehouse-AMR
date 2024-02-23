@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBO RAIDERS</title>
+    <link rel="icon" type="image/svg" href="{{ url_for('static', filename='img/team_logo.svg') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="{{ url_for('static', filename='img/team_logo.svg') }}" alt="Team Logo">
+        </div>
+
+        <div class="joystick">
+            <div class="diagonal-buttons">
+                <button id="digleftforward">
+                    <img src="{{ url_for('static', filename='img/digleftforward_arrow.svg') }}" alt="Diagonal Left Forward">
+                </button>
+                <button id="forward">
+                    <img src="{{ url_for('static', filename='img/forward_arrow.svg') }}" alt="Forward">
+                </button>
+                <button id="digrightforward">
+                    <img src="{{ url_for('static', filename='img/digrightforward_arrow.svg') }}" alt="Diagonal Right Forward">
+                </button>
+            </div>
+
+            <div class="diagonal-buttons">
+                <button id="left">
+                    <img src="{{ url_for('static', filename='img/left_arrow.svg') }}" alt="Left">
+                </button>
+                <button id="stop">
+                    <img src="{{ url_for('static', filename='img/stop_button.svg') }}" alt="Stop">
+                </button>
+                <button id="right">
+                    <img src="{{ url_for('static', filename='img/right_arrow.svg') }}" alt="Right">
+                </button>
+            </div>
+
+            <div class="diagonal-buttons">
+                <button id="digleftbackward">
+                    <img src="{{ url_for('static', filename='img/digleftbackward_arrow.svg') }}" alt="Diagonal Left Backward">
+                </button>
+                <button id="backward">
+                    <img src="{{ url_for('static', filename='img/backward_arrow.svg') }}" alt="Backward">
+                </button>
+                <button id="digrightbackward">
+                    <img src="{{ url_for('static', filename='img/digrightbackward_arrow.svg') }}" alt="Diagonal Right Backward">
+                </button>
+            </div>
+
+            <div class="spinning-buttons">
+                <button id="spinlift">
+                    <img src="{{ url_for('static', filename='img/spin_left.svg') }}" alt="Spin Left">
+                </button>
+                <button id="spinright">
+                    <img src="{{ url_for('static', filename='img/spin_right.svg') }}" alt="Spin Right">
+                </button>
+            </div>
+            <div class="current-move">
+                <p id="current_move">Play</p>
+            </div>
+        </div>
+    </div>
+</body>
