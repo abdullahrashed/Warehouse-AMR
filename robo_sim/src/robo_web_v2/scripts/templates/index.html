@@ -64,6 +64,18 @@
             <div class="current-move">
                 <p id="current_move">Play</p>
             </div>
+
+            <div class="diagonal-buttons">
+                <button id="up">
+                    <img src="{{ url_for('static', filename='img/up_button.svg') }}" alt="Up">
+                </button>
+                <button id="empty" disabled style="cursor: not-allowed;">
+                    <img src="{{ url_for('static', filename='img/empty.svg') }}">
+                </button>       
+                <button id="down">
+                    <img src="{{ url_for('static', filename='img/down_button.svg') }}" alt="Down">
+                </button>
+            </div>
         </div>
     </div>
 </body>

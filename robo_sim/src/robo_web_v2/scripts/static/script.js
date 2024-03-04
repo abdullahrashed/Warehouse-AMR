@@ -32,7 +32,9 @@ document.addEventListener("DOMContentLoaded", function() {
                 digleftforward: 'Diagonal Left Forward',
                 digrightforward: 'Diagonal Right Forward',
                 digleftbackward: 'Diagonal Left Backward',
-                digrightbackward: 'Diagonal Right Backward'
+                digrightbackward: 'Diagonal Right Backward',
+                up: "Lifter Up",
+                down: "Lifter Down"
             };
 
             const currentMoveMeaning = commandMeanings[command];

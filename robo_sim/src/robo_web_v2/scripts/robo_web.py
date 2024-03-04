@@ -35,7 +35,9 @@ def send_command(command):
         "digleftforward": 8,
         "digrightforward": 10,
         "digleftbackward": 9,
-        "digrightbackward": 11
+        "digrightbackward": 11,
+        "up": 12,
+        "down": 13
     }
 
     mode_value = command_mapping.get(command)
@@ -47,4 +49,4 @@ def send_command(command):
         return f"Unknown command: {command}", 400
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000)  # Change the port number as needed
+    app.run(host='0.0.0.0', port=5000)
