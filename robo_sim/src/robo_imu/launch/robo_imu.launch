@@ -1,0 +1,5 @@
+<launch>
+	<rosparam file="$(find robo_imu)/config/robo_imu.yaml" command="load"/>
+
+	<node name="robo_imu" pkg="robo_imu" type="robo_imu.py" output="screen" />
+</launch>
